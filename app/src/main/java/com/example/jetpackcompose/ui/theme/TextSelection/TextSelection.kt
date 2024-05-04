@@ -14,17 +14,12 @@ import androidx.compose.ui.Modifier
 fun TextSelection() {
 
         SelectionContainer {
-            Column(
-                modifier = Modifier.fillMaxSize(),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
-            ){
+
                 MyText()
                 DisableSelection {
                     MyText()
                 }
                 MyText()
-            }
 
         }
 

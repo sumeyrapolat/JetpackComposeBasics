@@ -28,11 +28,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun MyTextField() {
-    Column(
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
+
         var name by remember {
             mutableStateOf("")
         }
@@ -75,5 +71,4 @@ fun MyTextField() {
                 }
             )
         )
-    }
 }
