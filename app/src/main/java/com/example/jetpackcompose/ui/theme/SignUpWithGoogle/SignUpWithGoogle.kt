@@ -54,12 +54,7 @@ fun SignUpWithGoogle(
         mutableStateOf(false)
     }
 
-    Column(
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally,
 
-    ) {
         Surface(onClick = { clicked = !clicked },
             shape = RectangleShape,
             border = BorderStroke(width = 1.dp, color = borderColor),
@@ -104,7 +99,7 @@ fun SignUpWithGoogle(
             }
 
         }
-    }
+
 }
 
 @Composable
