@@ -8,14 +8,20 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import com.example.jetpackcompose.ui.theme.JetpackComposeTheme
 import com.example.jetpackcompose.ui.theme.LazyColumn.StickyHeaderWithLazyColumn
 import com.example.jetpackcompose.ui.theme.LimitedTextField.LimitedTextField
 import com.example.jetpackcompose.ui.theme.color2
 import com.example.jetpackcompose.ui.theme.color3
 import com.example.jetpackcompose.ui.theme.color4
+import com.example.jetpackcompose.ui.theme.navigation.SetNavGraph
 
 class MainActivity : ComponentActivity() {
+
+    private lateinit var navController : NavHostController
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -52,7 +58,9 @@ class MainActivity : ComponentActivity() {
 
                  } */
 
-                    LimitedTextField()
+                    //navigation için
+                    navController = rememberNavController()
+                    SetNavGraph(navController = navController)
                 }
 
                 //CoilImage()
