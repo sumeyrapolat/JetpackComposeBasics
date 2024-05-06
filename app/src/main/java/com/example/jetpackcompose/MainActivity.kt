@@ -10,6 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.example.jetpackcompose.ui.theme.JetpackComposeTheme
 import com.example.jetpackcompose.ui.theme.LazyColumn.StickyHeaderWithLazyColumn
+import com.example.jetpackcompose.ui.theme.LimitedTextField.LimitedTextField
 import com.example.jetpackcompose.ui.theme.color2
 import com.example.jetpackcompose.ui.theme.color3
 import com.example.jetpackcompose.ui.theme.color4
@@ -50,13 +51,15 @@ class MainActivity : ComponentActivity() {
                  ) {
 
                  } */
+
+                    LimitedTextField()
                 }
 
                 //CoilImage()
 
                 //LazyColumnComponent()
 
-                StickyHeaderWithLazyColumn()
+                //StickyHeaderWithLazyColumn()
 
 
             }
